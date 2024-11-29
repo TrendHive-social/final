@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Neutral dark gray for text */
+    line-height: 1.6;
+    background: #f7f6f3; /* Light neutral background */
+}
+
+header {
+    background: #586ba4; /* Muted blue with a modern tone */
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* White text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffad69; /* Soft peach for hover */
+}
+
+header nav ul li a.active {
+    border-bottom: 2px solid #ffad69; /* Soft peach accent */
+}
+
+.hero {
+    background: linear-gradient(to right, #586ba4, #f5cac3); /* Blue to muted pink */
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Section Styles */
+.mission, .features, .team, .testimonial {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #ffffff; /* Crisp white */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2, .features h2, .team h2, .testimonial h2 {
+    text-align: center;
+    color: #586ba4; /* Muted blue for headings */
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    margin: 10px 0;
+    color: #333333; /* Neutral dark gray for readability */
+}
+
+.team {
+    text-align: center;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #f5cac3; /* Light pink accent */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow */
+}
+
+.team-member img:hover {
+    transform: scale(1.2); /* Increase size by 20% */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Add a stronger shadow on hover */
+}
+
+.team-member h3 {
+    margin: 5px 0;
+    color: #586ba4; /* Muted blue */
+}
+
+.team-member p {
+    color: #666666; /* Softer gray for secondary text */
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #555555; /* Balanced gray tone */
+    border-left: 4px solid #ffad69; /* Soft peach for accent */
+    padding-left: 15px;
+    margin: 20px 0;
+    background: #fef9f6; /* Subtle cream background */
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #586ba4; /* Muted blue */
+    color: #ffffff; /* White text */
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons and Links */
+button, a {
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    color: #ffad69; /* Peach accent for hover */
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .team-member {
+        width: 100%;
+        margin: 20px 0;
+    }
+}

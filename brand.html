@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="brand.css">
+    <title>Impulso - Brand Sponsorships and Collaborations</title>
+</head>
+<body>
+    <header>
+        <h1>Impulso</h1>
+        <h2>Brand Sponsorships and Collaborations</h2>
+    </header>
+
+    <main>
+        <section class="niche-input">
+            <h3>Find Your Brand Collaborations</h3>
+            <form id="nicheForm">
+                <label for="niche">Select Your Content Niche:</label>
+                <select id="niche" name="niche">
+                    <option value="">--Select Niche--</option>
+                    <option value="tech">Technology</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="food">Food</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="lifestyle">Lifestyle</option>
+                    <option value="beauty">Beauty</option>
+                    <option value="parenting">Parenting</option>
+                    <option value="finance">Finance</option>
+                </select>
+                <button type="submit">Get Suggestions</button>
+            </form>
+        </section>
+
+        <section class="collaborations" id="collaborationResults">
+            <h3><center>Suggested Brands</center></h3>
+            <div class="brand-grid" id="brandGrid">
+                <!-- Brand content will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="brand.js"></script>
+</body>
+</html>
